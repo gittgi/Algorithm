@@ -18,7 +18,6 @@ for i in range(6): # 첫번째 주사위의 모든 눈에 대해서
     dices[0].remove(chosen) # 선택한 눈과
     dices[0].remove(opposite) # 반대 눈을 제거
     num_to_add += max(dices[0]) # 남은 눈 (옆면들) 중에 가장 큰 수 더함
-    new_chosen = opposite # 다음 주사위에서 새로 선택될 눈은 처음 선택한 눈의 반대면
     for j in range(1,len(dices)): # 남은 주사위들로 반복
         if num_to_add < 7: # 만약 아직 반복을 한번도 하지 않았다면 (그래서 옆면의 합이 아직 7보다 작다면)
             new_chosen = opposite # 첫 주사위의 반대면을 새 선택 눈으로 사용
